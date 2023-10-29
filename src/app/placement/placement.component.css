@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Noto Sans', sans-serif;
+  }
+  
+  .placement-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    padding: 20px;
+  }
+  
+  .placement-image {
+    flex: 1;
+    padding: 5px;
+    order: 2; 
+    display: flex;
+    justify-content: flex-end; /* Align the image to the right */
+  }
+  
+  .placement-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .placement-content {
+    flex: 2;
+    padding: 20px;
+    border-radius: 10px;
+    order: 1;
+    text-align: center; /* Align content to the right */
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+
+  
+.heading {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.heading  {
+  font-size: 30px;
+  font-weight: bold;
+ 
+}
+
+h1{
+  color:#004aad ;
+}
+
+  p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .placement-content p:last-child {
+    /* font-weight: bold; */
+    font-size: 24px;
+  }
+  
+  .placement-stats {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Align the content to the right */
+  
+
+}
+  
+  .placement-stats p {
+    font-size: 24px;
+    margin-right: 20px;
+    display: inline-block;
+  }
+  
+  .highlight {
+    font-weight: bold;
+    color: #007bff;
+  }
+
+
+
+
+
+  .placement-card-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .placement-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 10px); /* Distribute cards evenly */
+    padding: 20px;
+    overflow: hidden;
+    display: flex; /* Display cards as flex containers */
+    flex-direction: column; /* Stack content vertically */
+  }
+  
+  .placement-card img {
+    max-width: 100px; /* Adjust the image width as needed */
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .placement-card h4 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .placement-card .overflow-content {
+    overflow: auto;
+    max-height: 100px; /* Set a maximum height for content */
+  }
+  
+  .placement-card p {
+    font-size: 16px;
+    margin: 0;
+    padding-top: 10px; /* Add padding for better spacing */
+  }
+  
+ 
+
+.faang-line {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    font-size: 26px;
+    font-weight: bold;
+    color:#ff1616;
+  }
+  
+  /* .faang-line  {
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: underline;
+  } */
+  
+  /* ... Existing styles ... */
+
+.placement-card {
+    /* ... Existing styles ... */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    text-align: center;
+  }
+  
+  .placement-card .card-details {
+    margin-bottom: 10px;
+  }
+  
+  .placement-card .card-image {
+    margin-bottom: 10px;
+  }
+  
+  .placement-card img {
+    max-width: 100px; /* Adjust the image width as needed */
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .placement-card .card-description {
+    overflow: auto;
+    max-height: 100px; /* Set a maximum height for description */
+  }
+  
+ 
+
+
+  .placement-logos {
+    display: flex;
+    justify-content: center; /* Center the logos horizontally */
+    align-items: center; /* Center the logos vertically */
+    margin-top: 20px;
+  }
+  
+  .placement-logos img {
+    max-width: 100px; /* Set the maximum width for logos */
+    height: auto;
+    margin: 10px; /* Add margin between logos */
+  }
+  
+
+
+
+
+
+
+
+
+  .image-card-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .image-card {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .image-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  

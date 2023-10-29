@@ -1,0 +1,84 @@
+<div>
+    <h1 style="text-align: center;margin-top: 60px;"> 
+      Logipool Registration Form</h1> 
+  
+      
+  
+  <form style="margin-left: 60px;margin-right: 40px;"     
+  [formGroup] = "LogipoolForm" (ngSubmit)="registerFn()">             
+  
+    <div class="form-group">
+        <label for="username"><b>Student Name</b></label>
+      <input type="text" class="form-control" formControlName="username" [ngClass]="{error : getControl('username')?.errors && getControl('username')?.touched}">
+  
+      <div *ngIf="getControl('username')?.errors && getControl('username')?.touched">
+        <small style="color: red;" *ngIf="getControl('username')?.errors?.['required']">Username is required!</small>   
+      </div>
+    </div> <br>
+    
+    <div class="form-group">
+      <label for="email"><b>Email Id</b></label>
+      <input type="email" class="form-control" formControlName="email"  [ngClass]="{error : getControl('email')?.errors && getControl('email')?.touched}">
+  
+      <div *ngIf="getControl('email')?.errors && getControl('email')?.touched">
+        <small style="color: red;" *ngIf="getControl('email')?.errors?.['required']">Email-id is required!</small>
+      </div>
+    </div> <br>
+    
+    <div class="form-group">
+      <label for="mobile"><b>Mobile Number</b></label>
+      <input type="number" class="form-control" formControlName="mobile" [ngClass]="{error : getControl('mobile')?.errors && getControl('mobile')?.touched}">
+  
+      <div *ngIf="getControl('mobile')?.errors && getControl('mobile')?.touched">
+        <small style="color: red;" *ngIf="getControl('mobile')?.errors?.['required']">Mobile number is required!</small>
+      </div>
+    </div> <br>
+  
+    <div class="form-group">
+      <label for="education"><b>Previous Education</b></label>
+      <input type="text" class="form-control" formControlName="education">
+  
+      <div *ngIf="getControl('education')?.errors && getControl('education')?.touched">
+        <small style="color: red;" *ngIf="getControl('education')?.errors?.['required']">This field cannot be empty!</small>
+      </div>
+    </div> <br>
+  
+    <div class="form-group">
+      <label><b>Select Course</b></label>    
+  
+      <select class="form-select">
+        <option selected>Click here to select courses</option>
+        <option value="1">Mean Stack</option>
+        <option value="2">Mern Stack</option>
+        <option value="3">AWS</option>
+        <option value="4">Cyber Security</option>
+      </select>
+    </div> <br>
+  
+    <div class="form-group">
+      <input type="checkbox"> <label><b>I agree terms and conditions declared by the Logipool</b></label>
+    </div>
+  <br><br>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">SUBMIT</button>
+    </div>
+  
+  </form>
+  
+  
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div style="text-align: center;">{{LogipoolForm.value | json}}</div>
+  
+  
+  
+   

@@ -1,0 +1,63 @@
+<div class="container-fluid">
+
+    
+
+ 
+    
+    
+    
+    <!--Table-->
+    
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col" style="color: gray;">#</th>
+            <th scope="col" style="color: gray;">Name</th>
+            <th scope="col" style="color: gray;">Eamil Id</th>
+            <th scope="col" style="color: gray;">Action</th>
+        </tr>
+        </thead>
+        <tbody *ngFor="let value of  enquiriesFromClient; let counter = index">
+            <tr>
+                <th scope="row">{{counter+1}}</th>
+                <td>{{value.Name}}</td>
+                <td>{{value.Email}}</td>
+                
+                <td>
+    
+            <!--Edit Course Button-->
+    
+            <button (click)="onViewMessage(value.Message)" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edit">View Message</button>
+    
+                
+    
+                <div class="modal fade" id="edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: black;color: white;">
+                        <h5 class="modal-title" id="staticBackdropLabel">Update Course</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+
+                                <p id="modal-message">{{Msg}}</p>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn" data-bs-dismiss="modal" style="background-color: palevioletred">Close</button>
+
+                                </div>
+                        
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+    
+    
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+

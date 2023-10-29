@@ -1,0 +1,67 @@
+
+
+    <div class="container">
+        <div class="overlay"></div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Contact Details</h2>
+                <div class="contact-info">
+                    <ul class="list-unstyled">
+                        <li><i class="fa-solid fa-location-dot"></i><!--<strong>Address:</strong>--> <span> Logipool Infotech, Office no 201, 2nd floor, behind </span></li>
+                        <li><span class="ex"> McDonald's, Warje, Pune, Maharashtra 411058</span></li>
+                        <li><i class="fa-solid fa-phone"></i><!--<strong>Phone:</strong>--><span> +91 788 788 5052</span></li>
+                        <li><i class="fa-solid fa-envelope"></i><!--<strong>Email:</strong>--> <span>info@logipool.org</span></li>
+                        <li><i class="fa-solid fa-globe"></i><!--<strong>Website:</strong>--><span>https://logipool.org/ </span>  </li>
+                    </ul> 
+                    <ul>   
+                        <li class="social-icons">
+                            <a href="https://www.facebook.com/logipool/" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.twitter.com/logipoolinfotech" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/logipool_infotech/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/logipool-info-tech/?originalSubdomain=in" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Contact Us</h2>
+                
+                <form class="contact-form" [formGroup]="contactUsForm" (ngSubmit)="sendEnquiry()">
+                    <div class="form-group mb-3">
+                        <label for="name">Name</label>
+                        <input  type="text" class="form-control" id="name" formControlName="name" placeholder="Your Name" required>
+                       
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control"  formControlName="email" id="email" placeholder="Your Email" required name="email"  ngModel email="true">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" formControlName="message" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-submit">Send</button>
+                        <button type="reset" class="btn btn-danger">Reset</button>
+                    </div>
+                </form>
+
+                
+
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h2>Find Us</h2>
+                <!-- Full-width map -->
+                <div class="map-container">
+                    
+                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15135.666271467107!2d73.7963724!3d18.487438!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf7b4e714c35%3A0x77901ea0ac6a3421!2sLogipool%20Infotech!5e0!3m2!1sen!2sin!4v1691477933082!5m2!1sen!2sin" frameborder="0"  style="border:0;" allowfullscreen=""  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    

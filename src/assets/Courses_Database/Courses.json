@@ -1,0 +1,34 @@
+[
+
+    {
+        "CourseName":"MEAN STACK",
+        "Fee":25000,
+        "Description":"This MEAN stack developer program provides extensive training in front-end, middleware, and back-end software development technologies, including testing and quality assurance. Phase-end and capstone projects are based on real business scenariosThe MEAN stack is a JavaScript-based framework for developing web applications. MEAN is named after MongoDB, Express, Angular, and Node, the four key technologies that make up the layers of the stack.",
+        "CourseContent":["HTML","CSS","JAVASCRIPT","TYPESCRIPT","BOOTSTRAP","MATERIAL DESIGN","ANGULAR FRAMEWORK","NODE JS","EXPRESS","MONGODB","CREATING A PROJECT BASED USING MEAN STACK"],
+        "CourseDuration":"6 Months"
+    },
+
+    {
+        "CourseName":"MERN STACK",
+        "Fee":21000,
+        "Description":"MERN stack is a collection of technologies that enables faster application development. It is used by developers worldwide. The main purpose of using MERN stack is to develop apps using JavaScript only. This is because the four technologies that make up the technology stack are all JS-based.",
+        "CourseContent":["HTML","CSS","JAVASCRIPT","BOOTSTRAP","MATERIAL DESIGN","REACT LIBRARY","NODE JS","EXPRESS JS","MONGODB"],
+        "CourseDuration":"6 Months"
+    },
+    {
+        "CourseName":"CYBER SECURITY",
+        "Fee":30000,
+        "Description":"This program provides you with the skills necessary to leverage offensive cybersecurity to strengthen the stability and security of IT systems. You will benefit from and be better able to master the highly sought-after cybersecurity capabilities owing to the comprehensive curriculum of this program.",
+        "CourseContent":["Ethical Hacking","Cryptography Concepts","IDS Firewalls and Honeypots","Network Security","Vulnerability Assessment","Penetration Testing","Reconnaissance","Web App Threats","Generating Payload","Exploiting and Gaining Access","Anonymity Concept"],
+        "CourseDuration":"3 Months"
+    },
+    {
+        "CourseName":"AWS CERTIFICATION TRAINING COURSE",
+        "Fee":15000,
+        "Description":"Our AWS training is the first AWS course certified by NASSCOM and it aligns with industry standards. This AWS Certification course includes SAA-C03 to help you clear AWS Solutions Architect Certification exam. Learn AWS skills while working on multiple case studies and projects, and master building highly scalable, and fault-tolerant applications.",
+        "CourseContent":["Efficient design and deployment of the AWS system","Cost-evaluation and cost-control mechanisms","Elastic Load Balancing on multiple EC2 instances","Data ingress and egress on AWS","Identifying relevant and suitable uses of AWS architecture","Penetration Testing","Lift and shift mechanism of AWS on-premises applications","Finding the right solutions based on computational, database, and security needs"],
+        "CourseDuration":"3 Months"
+    }
+
+
+]

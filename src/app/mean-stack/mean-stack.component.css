@@ -1,0 +1,23 @@
+.header-div{
+    background-color: #512B81 !important;
+    color: white !important;
+}
+
+.icon-square{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    background-color: white !important;
+}
+
+
+.headText
+{
+
+    font-size: 2.5rem !important;
+   
+}
+
+td,th{
+    width:50%;
+}

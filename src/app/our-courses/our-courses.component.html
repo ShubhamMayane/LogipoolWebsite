@@ -1,0 +1,180 @@
+
+
+<div >
+
+    <div >
+    
+    <div class="p-4 p-md-5 mb-4  text-body-emphasis header-div" style="background-image:url(https://www.simplilearn.com/ice9/assets/fsd-banner_1.jpg);background-size: 115% 100%;height: 70vh;">
+        <div class="col-lg-6 px-0">
+          <h2 class="display-4 fw-bold headText">coursename</h2>
+          <p class="lead my-3">course Description</p>
+          
+        </div>
+    </div>
+    
+    
+        <!-- <h1>{{value.CourseName}}</h1>
+        <h1>{{value.Fee}}</h1>
+        <h1>{{value.Description}}</h1>
+        <h1>{{value.CourseDuration}}</h1> -->
+    
+    
+    
+   
+    
+    
+    <!-- course content END -->
+    
+    <!-- course details END -->
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+              
+        
+              <article class="blog-post">
+                <h2 class="display-5 link-body-emphasis mb-3 text-center">Course Details</h2>
+              
+        
+                <p class="text-center mb-3">Learning how to design both the front and back end of web applications opens up twice as many job opportunities for developers. If you already know JavaScript, learning the MEAN Stack is easy. Udemy offers top-rated courses on every aspect of MEAN usage, from Angular, to Node.js, to Express, and MongoDB.</p>
+
+
+                <!-- //our courses table -->
+                <!--Table-->
+    
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col" style="color: gray;">#</th>
+            <th scope="col" style="color: gray;">courseName</th>
+            <th scope="col" style="color: gray;">courseDuration</th>
+            <th scope="col" style="color: gray;">Course Fees</th>
+            <th scope="col" style="color: gray;">Action</th>
+        </tr>
+        </thead>
+        <tbody *ngFor="let value of  coursesDetails; let counter = index">
+            <tr>
+                <th scope="row">{{counter+1}}</th>
+                <td>{{value.courseName}}</td>
+                <td>{{value.courseDuration}}</td>
+                <td> {{value.courseFees | currency:'INR'}}</td>
+                
+                <td>
+    
+            <!--Edit Course Button-->
+    
+            <button (click)="ViewCourseContents(value.courseContent)" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#edit">View Contents</button>
+    
+                <!--Edit Course Form-->
+    
+                <div class="modal fade" id="edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: black;color: white;">
+                        <h5 class="modal-title" id="staticBackdropLabel">Course Contents</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                
+                                <ul *ngFor="let content of courseContent">
+                                    <li>{{content}}</li>
+                                </ul>
+                               
+                                
+                            <div class="modal-footer">
+                                <button type="button" class="btn" data-bs-dismiss="modal" style="background-color: palevioletred">Close</button>
+                            </div>
+                       
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+    
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+
+                <!-- our courses table end -->
+
+
+    
+                <!-- <table class="table table-bordered">
+                 
+                  <tbody class="courseMainDetails">
+
+                    <tr>
+                        <th scope="col" >Course Name</th>
+                        <td scope="col" >hello</td>
+                        
+                    </tr>
+                    <tr>
+                    
+                      <th>Course Fee</th>
+                      <td>shubham</td>
+                      
+                    </tr>
+                    <tr>
+                     
+                      <th>Course Duration</th>
+                      <td>Mayane</td>
+                      
+                    </tr>
+    
+                    <tr>
+                     
+                      <th>Next Batch Starting Date</th>
+                      <td>25 Aug 2023</td>
+                      
+                    </tr>
+    
+                    <tr>
+                     
+                      <th>Mode Of Batch</th>
+                      <td>Hybrid(Online & Offline)</td>
+                      
+                    </tr>
+    
+                    <tr>
+                     
+                      <th>Batch Timing</th>
+                      <td>7.00 am to 10.00 am</td>
+                      
+                    </tr>
+                    
+                    
+                  </tbody>
+                </table>
+    
+                -->
+                
+             
+              </article>
+    
+    
+            </div>
+        
+            
+          </div>
+    
+          <nav class=" d-flex justify-content-center" aria-label="Pagination" >
+            <button routerLink="/contactus" class="btn btn-outline-primary rounded-pill bounce" href="#">Contact Us Now</button>
+           
+          </nav>
+    
+    </div>
+    
+  
+    
+    
+    
+    
+    </div>
+    
+    </div>
+    

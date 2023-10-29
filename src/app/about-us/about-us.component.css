@@ -1,0 +1,46 @@
+.team
+{
+text-align: center;
+font-weight: bold;
+color: #004;
+}
+
+h3{
+    font-weight: bold;
+}
+
+p{
+    font-weight:light;
+}
+.activity{
+    color:crimson;
+    text-align: center;
+    font-weight: bold;
+   font-size:xx-large;
+}
+.card-title{
+    text-align: center;
+    font-weight: bold;
+}
+.heading{
+    color:#004;
+    font-weight: bold;
+}
+.question1{
+    color:#ff1616;
+    font-weight: bold;
+}
+.question2{
+    color:#004;
+    font-weight: bold;
+}
+.heading3{
+    color:#004;
+    font-weight: bold;
+    text-align: center;
+}
+h5{
+    font-weight: bold;
+    /* text-shadow: 1px  1px #ff1616;
+    color: #004; */
+}
